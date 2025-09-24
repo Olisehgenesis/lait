@@ -1,0 +1,77 @@
+{
+  "topic": "3b639bcc9dce1c79e40a95c592cdeeb308c0452f85a4baf24f734fc99129cd14",
+  "relay": {
+    "protocol": "irn"
+  },
+  "expiry": 1758969221,
+  "namespaces": {
+    "eip155": {
+      "chains": [
+        "eip155:8453"
+      ],
+      "accounts": [
+        "eip155:8453:0xb6E8a285202710Be85FB68bE6E5659A53B4Abb9c"
+      ],
+      "methods": [
+        "eth_signTypedData",
+        "eth_signTransaction",
+        "personal_sign",
+        "eth_sendTransaction"
+      ],
+      "events": [
+        "accountsChanged",
+        "chainChanged"
+      ]
+    }
+  },
+  "acknowledged": true,
+  "pairingTopic": "90796ac69fc77461d2a2eb85db103173b18fdc3993e334e1eabbed44907fef2e",
+  "requiredNamespaces": {},
+  "optionalNamespaces": {
+    "eip155": {
+      "chains": [
+        "eip155:8453"
+      ],
+      "methods": [
+        "eth_sendTransaction",
+        "eth_signTransaction",
+        "eth_sign",
+        "personal_sign",
+        "eth_signTypedData"
+      ],
+      "events": [
+        "chainChanged",
+        "accountsChanged"
+      ]
+    }
+  },
+  "controller": "e79ee1ebbeeca362333856b192bb9783344e498fde8795ca5a6cf1314bd75226",
+  "self": {
+    "publicKey": "50f635e116fbeeaa60e429ae2fed9c06cd088aa02ad900326a84c47bd796533d",
+    "metadata": {
+      "name": "Lait Contracts Deployer",
+      "description": "Deploy Lait smart contracts",
+      "url": "https://lait.finance",
+      "icons": [
+        "https://avatars.githubusercontent.com/u/37784886"
+      ]
+    }
+  },
+  "peer": {
+    "publicKey": "e79ee1ebbeeca362333856b192bb9783344e498fde8795ca5a6cf1314bd75226",
+    "metadata": {
+      "name": "Trust Wallet",
+      "redirect": {
+        "universal": "https://link.trustwallet.com",
+        "native": "trust://",
+        "linkMode": false
+      },
+      "icons": [
+        "https://trustwallet.com/assets/images/media/assets/TWT.png"
+      ],
+      "description": "Trust Wallet is a secure and easy-to-use mobile wallet",
+      "url": "https://trustwallet.com"
+    }
+  },
+  "transportType": "relay"
+}
