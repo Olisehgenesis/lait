@@ -45,6 +45,8 @@
     "sync-abis": "node scripts/sync-abis.js",
     "deploy": "npx hardhat  run scripts/deploy.cjs --network baseSepolia",
     "deploy:base": "npx hardhat  run scripts/deploy.cjs --network base",
+    "deploy:proxy": "npx hardhat  run scripts/deployproxy.cjs --network baseSepolia",
+    "deploy:proxy:base": "npx hardhat  run scripts/deployproxy.cjs --network base",
     "deploy:tokens": "npx hardhat run scripts/deploy-tokens.cjs --network baseSepolia",
     "deploy:tokens:base": "npx hardhat run scripts/deploy-tokens.cjs --network base",
     "verify:base": "node scripts/verify-base-direct.cjs",

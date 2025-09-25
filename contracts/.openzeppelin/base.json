@@ -1,0 +1,689 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x16485C2820bE380980d75527b9262cABE400A099",
+      "txHash": "0x7d21a8390fa969b63c5a6bde154ea42435489439b12ae4ce0bf7fbe4c21fa76e",
+      "kind": "uups"
+    },
+    {
+      "address": "0x157545cf428089002D779771Ed047F902cD54575",
+      "txHash": "0x19bcc7b5ed5210b6afa96be65301a6bb4a58fb4ac0b767350df3d83b9f33c6c9",
+      "kind": "uups"
+    },
+    {
+      "address": "0xad758d2554CD658e26168564675A904d638A55A1",
+      "txHash": "0x801bd17befd1e99a1db1a0b31812d91998581d6b847475b290b894dd6f95a528",
+      "kind": "uups"
+    },
+    {
+      "address": "0xbAb0222C001926b59C967ee9a723337Fcd3cE39A",
+      "txHash": "0xb89d0de02e3d40135587861751eac39ea1b135b43479f00e755839d448e71fba",
+      "kind": "uups"
+    },
+    {
+      "address": "0x1F8AAa2F531508e9F1DdB0a2B70f23DeE6b746de",
+      "txHash": "0x9fea9317754714afc16875174fd133f737fbe7759a95dea7f994ed120b38c4b3",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "f62970c0cd77ab5bcb1dbc08f811ede701ad3d1d81d95e5797cdf2b172a97ce9": {
+      "address": "0xdebFe0fe69cdB07D7a7b0e98d38DD7eA6de39069",
+      "txHash": "0xeae8b0fdfa30c688ada0376a4a229ef0e354cc07510854b52d1b90ae27e870d9",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "buyOrders",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_bytes32,t_struct(BuyOrder)2441_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:105"
+          },
+          {
+            "label": "sellOrders",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_bytes32,t_struct(SellOrder)2471_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:106"
+          },
+          {
+            "label": "userBuyOrders",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_array(t_bytes32)dyn_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:107"
+          },
+          {
+            "label": "userSellOrders",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_mapping(t_address,t_array(t_bytes32)dyn_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:108"
+          },
+          {
+            "label": "supportedTokens",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:109"
+          },
+          {
+            "label": "admins",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_struct(Admin)2403_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:112"
+          },
+          {
+            "label": "adminList",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:113"
+          },
+          {
+            "label": "isAdmin",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:114"
+          },
+          {
+            "label": "allBuyOrderIds",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_array(t_bytes32)dyn_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:117"
+          },
+          {
+            "label": "allSellOrderIds",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_array(t_bytes32)dyn_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:118"
+          },
+          {
+            "label": "pendingBuyOrderIds",
+            "offset": 0,
+            "slot": "10",
+            "type": "t_array(t_bytes32)dyn_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:119"
+          },
+          {
+            "label": "pendingSellOrderIds",
+            "offset": 0,
+            "slot": "11",
+            "type": "t_array(t_bytes32)dyn_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:120"
+          },
+          {
+            "label": "exchangeRates",
+            "offset": 0,
+            "slot": "12",
+            "type": "t_mapping(t_address,t_mapping(t_string_memory_ptr,t_struct(ExchangeRate)2480_storage))",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:123"
+          },
+          {
+            "label": "tokenFees",
+            "offset": 0,
+            "slot": "13",
+            "type": "t_mapping(t_address,t_struct(FeeConfig)2489_storage)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:126"
+          },
+          {
+            "label": "treasury",
+            "offset": 0,
+            "slot": "14",
+            "type": "t_address",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:129"
+          },
+          {
+            "label": "collectedFees",
+            "offset": 0,
+            "slot": "15",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:130"
+          },
+          {
+            "label": "minOrderAmount",
+            "offset": 0,
+            "slot": "16",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:133"
+          },
+          {
+            "label": "maxOrderAmount",
+            "offset": 0,
+            "slot": "17",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:134"
+          },
+          {
+            "label": "escrowedBalances",
+            "offset": 0,
+            "slot": "18",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:141"
+          },
+          {
+            "label": "escrowedEthBalance",
+            "offset": 0,
+            "slot": "19",
+            "type": "t_uint256",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:142"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "20",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "LaitV2",
+            "src": "contracts/laitv2.sol:727"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)73_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(PausableStorage)224_storage": {
+            "label": "struct PausableUpgradeable.PausableStorage",
+            "members": [
+              {
+                "label": "_paused",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(ReentrancyGuardStorage)288_storage": {
+            "label": "struct ReentrancyGuardUpgradeable.ReentrancyGuardStorage",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_bytes32)dyn_storage": {
+            "label": "bytes32[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_enum(OrderStatus)2408": {
+            "label": "enum LaitV2.OrderStatus",
+            "members": [
+              "PENDING",
+              "FILLED",
+              "REFUNDED",
+              "EXPIRED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_address,t_array(t_bytes32)dyn_storage)": {
+            "label": "mapping(address => bytes32[])",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_string_memory_ptr,t_struct(ExchangeRate)2480_storage))": {
+            "label": "mapping(address => mapping(string => struct LaitV2.ExchangeRate))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(Admin)2403_storage)": {
+            "label": "mapping(address => struct LaitV2.Admin)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(FeeConfig)2489_storage)": {
+            "label": "mapping(address => struct LaitV2.FeeConfig)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(BuyOrder)2441_storage)": {
+            "label": "mapping(bytes32 => struct LaitV2.BuyOrder)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(SellOrder)2471_storage)": {
+            "label": "mapping(bytes32 => struct LaitV2.SellOrder)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(ExchangeRate)2480_storage)": {
+            "label": "mapping(string => struct LaitV2.ExchangeRate)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Admin)2403_storage": {
+            "label": "struct LaitV2.Admin",
+            "members": [
+              {
+                "label": "wallet",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "addedTimestamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "addedBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ordersFilled",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "totalVolume",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_struct(BuyOrder)2441_storage": {
+            "label": "struct LaitV2.BuyOrder",
+            "members": [
+              {
+                "label": "orderId",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "paymentToken",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "paymentAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "targetCurrency",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "targetAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "orderMetadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(OrderStatus)2408",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "minRefundTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "filledBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "filledAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "notes",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "metadataUpdated",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          },
+          "t_struct(ExchangeRate)2480_storage": {
+            "label": "struct LaitV2.ExchangeRate",
+            "members": [
+              {
+                "label": "rate",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "decimals",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "lastUpdated",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "isActive",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(FeeConfig)2489_storage": {
+            "label": "struct LaitV2.FeeConfig",
+            "members": [
+              {
+                "label": "buyFeePercent",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "sellFeePercent",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "minFeeAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "maxFeeAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              }
+            ],
+            "numberOfBytes": "128"
+          },
+          "t_struct(SellOrder)2471_storage": {
+            "label": "struct LaitV2.SellOrder",
+            "members": [
+              {
+                "label": "orderId",
+                "type": "t_bytes32",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "sellToken",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "sellAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "sourceCurrency",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "sourceAmount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "orderMetadata",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "6"
+              },
+              {
+                "label": "status",
+                "type": "t_enum(OrderStatus)2408",
+                "offset": 0,
+                "slot": "7"
+              },
+              {
+                "label": "createdAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "8"
+              },
+              {
+                "label": "minRefundTime",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "9"
+              },
+              {
+                "label": "filledBy",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "10"
+              },
+              {
+                "label": "filledAt",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "11"
+              },
+              {
+                "label": "notes",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "12"
+              },
+              {
+                "label": "metadataUpdated",
+                "type": "t_bool",
+                "offset": 0,
+                "slot": "13"
+              }
+            ],
+            "numberOfBytes": "448"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.ReentrancyGuard": [
+            {
+              "contract": "ReentrancyGuardUpgradeable",
+              "label": "_status",
+              "type": "t_uint256",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ReentrancyGuardUpgradeable.sol:43",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Pausable": [
+            {
+              "contract": "PausableUpgradeable",
+              "label": "_paused",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/utils/PausableUpgradeable.sol:21",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
